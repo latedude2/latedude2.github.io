@@ -64,17 +64,16 @@
     position: relative;
     width: 100%;
 }
-.logo-github {
+.logo-github, .logo-linkedin{
     height: 3.2rem;
     position: fixed;
-    right: 0;
-    width: 3.2rem;
     margin: 1rem;
 }
 .logo-linkedin {
-    height: 3.2rem;
-    position: fixed;
     right: 4rem;
     width: 3.5rem;
-    margin: 1rem;
+}
+.logo-github{
+    right: 0;
+    width: 3.2rem;
 }
