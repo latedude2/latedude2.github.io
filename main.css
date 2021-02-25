@@ -64,6 +64,9 @@
     position: relative;
     width: 100%;
 }
+.main{
+    padding-top: 7rem;
+}
 .logo-github, .logo-linkedin{
     height: 3.2rem;
     position: fixed;
