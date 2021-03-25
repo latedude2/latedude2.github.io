@@ -66,6 +66,7 @@
 }
 .main{
     padding-top: 7rem;
+    background-color: white;
 }
 .logo-github, .logo-linkedin{
     height: 3.2rem;
@@ -79,4 +80,30 @@
 .logo-github{
     right: 0;
     width: 3.2rem;
+}
+.cv-image{
+    height: 6rem;
+    width: 6rem;
+    padding-right: 10px;
+    float:left;
+}
+.cv-entry{
+    overflow:auto;
+}
+.cv-text
+{
+    float:left;
+}
+.row{
+    margin-bottom: 2rem;
+}
+.project-image{
+    width: 50%;
+}
+h3{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+p{
+    margin-bottom: 5px;
 }
