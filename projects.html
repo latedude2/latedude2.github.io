@@ -3,16 +3,16 @@
     <meta name="Simonas Čeponis portfolio">
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-
     <!-- CSS Reset -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-
     <!-- Milligram CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
-
     <!-- My CSS -->
     <link rel="stylesheet" href="main.css">
 
+    <link rel="stylesheet" href="mibreitGallery.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="mibreitGallery.min.js"></script>
     
 </head>
 <body>
@@ -43,18 +43,46 @@
         <div class="row">
             <div class="column">
               <h2>University Projects</h2>
-                <h3>AAU 5th Semester Project</h3>
+                <h3>Game Navigational Aid research</h3>
 
-                <p>A research project looking into navigational aids’ effect on cognitive map creation of video game environment. 
-                  I worked together with 5 other students. 
+                <p>I worked on a research project looking into navigational aids’ effect on cognitive map creation of video game environment together with 5 other students. 
                   For this project, I acted as the team lead, planning the work schedule, 
-                  splitting tasks and also taking big parts of the technical implementation.</p>
-              <h2>Personal Side Projects</h2>
-              
+                  splitting tasks and also taking big parts of the technical implementation. </p>
+                <p><b>Technologies used: </b>C#, Processing, Python, Unity, Jupyter Notebooks, Pandas and various others.</p>
+                <p><b>Links: </b> </p>
+
+                <div class="image-gallery">
+                  <div class="mibreit-imageElement" style="opacity:0">
+                    <img src="images/mibreitGallery/image-placeholder-transparent.png" 
+                          data-src="images/projects/AngryBees.jpg" 
+                          data-title="Image 1" 
+                          alt="Image 2" />
+                    <p>I was responsible for a big part of the programming for this project. I also setup the navigation system and optimized the performance of the game. 
+                      A lot of effort was put in into optimization because the size and design of the level were hard to optimize for. </p>
+                  </div>
+                  <div class="mibreit-imageElement" style="opacity:0">
+                    <img src="images/mibreitGallery/image-placeholder-transparent.png" 
+                          data-src="images/projects/HeatmapForward.png" 
+                          data-title="Image 2" 
+                          alt="Image 2" />
+                    <p>I wrote a Processing application to visualize the paths the players were taking through the level. 
+                      This tool was necessary to ensure that the data collected from the test participants was valid. 
+                      And hey, it looks pretty neat. </p>
+                  </div>
+                  <div class="mibreit-imageElement" style="opacity:0">
+                    <img src="images/mibreitGallery/image-placeholder-transparent.png" 
+                          data-src="images/projects/ScatterTimeBack.jpg" 
+                          data-title="Image 3" 
+                          alt="Image 3" />
+                    <p>I was responsible for the quantitative data analysis for this project. 
+                      It included choosing the correct analysis tool and applying it using Python. 
+                      The results showed that there was no significant difference between using an NPC or an Arrow as the navigational aid for the creation of a cognitive map of the game environment. </p>
+                  </div>
+                  <script src="initializeGallery.js"></script>
+                </div>
             </div>
         </div>
       </div>
     </div>
 
-    <script src="slideShow.js"></script>
 </body>
