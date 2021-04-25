@@ -1,0 +1,65 @@
+<head>
+    <title>Simonas Čeponis Wildfire Rush Game</title>
+    <meta name="Simonas Čeponis portfolio">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/main.css">
+
+    <link rel="stylesheet" href="/mibreitGallery.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/mibreitGallery.min.js"></script>
+</head>
+<body>
+  <div w3-include-html="/navigation.html"></div> 
+  <div class="container">
+    <div class="main">
+      <div class="row">
+          <div class="column">
+            <h2>Wildfire Rush</h2>
+            <p>A game developed by me and 4 other students during a game development course at Aalborg university.
+            For this project, I acted as the team lead, programmer and game designer. 
+            The levels were loaded during runtime from a website I setup which hosted the level files. 
+            This was done to easier edit the levels when using the WebGL build.</p>
+            <p><b>Technologies used: </b>C#, Unity, Javascript.</p>
+            <b>Links: </b> 
+            <ul>
+                <li><a href= "https://www.youtube.com/watch?v=xE3GL39ctm0">Video Trailer</a></li>
+                <li><a href= "https://github.com/Jokubas126/BushfireGame">Github Repository</a></li>
+                <li><a href= "https://latedude2.itch.io/wildfire-rush">Play the game on Itch.io!</a></li>
+            </ul> 
+            <div class="image-gallery">
+            <div class="mibreit-imageElement" style="opacity:0">
+                <img src="/images/mibreitGallery/image-placeholder-transparent.png" 
+                    data-src="/images/projects/wildfireRush/menu.png" 
+                    data-title="Image 1" 
+                    alt="Image 1" />
+                <p>I worked with the Unity UI system to setup the menu layout so it adapted to various screen sizes. </p>
+            </div>
+            <div class="mibreit-imageElement" style="opacity:0">
+                <img src="/images/mibreitGallery/image-placeholder-transparent.png" 
+                    data-src="/images/projects/wildfireRush/particleSystem.png" 
+                    data-title="Image 2" 
+                    alt="Image 2" />
+                <p>I used the Unity Particle System to create a fire extinguisher effect. </p>
+            </div>
+            <div class="mibreit-imageElement" style="opacity:0">
+                <img src="/images/mibreitGallery/image-placeholder-transparent.png" 
+                    data-src="/images/projects/wildfireRush/cinemachine.png" 
+                    data-title="Image 3" 
+                    alt="Image 3" />
+                <p>I used Cinemachine to capture all the shots you can see in the trailer of this game. </p>
+            </div>
+            <script src="/initializeGallery.js"></script>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="/includeHTML.js"></script>
+  <script>includeHTML();</script>
+</body>
