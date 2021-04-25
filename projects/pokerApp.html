@@ -1,5 +1,5 @@
 <head>
-    <title>Simonas Čeponis Wildfire Rush Game</title>
+    <title>Simonas Čeponis Poker App Image Processing</title>
     <meta name="Simonas Čeponis portfolio">
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
@@ -20,40 +20,42 @@
     <div class="main">
       <div class="row">
           <div class="column">
-            <h2>Wildfire Rush</h2>
-            <p>A game developed by me and 4 other students during a game development course at Aalborg university.
-            For this project, I acted as the team lead, programmer and game designer. 
-            We won the most engaging game title out of 19 groups of students that made games the same semester at AAU! 
-            The levels were loaded during runtime from a website I setup which hosted the level files. 
-            This was done to easier edit the levels when using the WebGL build.</p>
-            <p><b>Technologies used: </b>C#, Unity, Javascript.</p>
+            <h2>Poker App</h2>
+            <p>A university project developed by me and 5 other students during at Aalborg university.
+            For this project, I acted as the team lead and programmer. 
+            We developed an app which connected to a Python server which analysed images taken by a camera. 
+            The app then told the players what poker hand they have and how strong it is. 
+        </p>
+            <p><b>Technologies used: </b>Android, Python, OpenCV.</p>
             <b>Links: </b> 
             <ul>
-                <li><a href= "https://www.youtube.com/watch?v=xE3GL39ctm0" target="_blank">Video Trailer</a></li>
-                <li><a href= "https://github.com/Jokubas126/BushfireGame" target="_blank">Github Repository</a></li>
-                <li><a href= "https://latedude2.itch.io/wildfire-rush" target="_blank">Play the game on Itch.io!</a></li>
+                <li><a href= "https://youtu.be/6csXeE_AygI" target="_blank">Video Presentation</a></li>
+                <li><a href= "https://github.com/latedude2/P3_image_processing/tree/master/openCV_version/venv/Scripts/finalCode" target="_blank">Github Repository - Python code</a></li>
+                <li><a href= "https://github.com/latedude2/P3_image_processing/tree/master/android_application/android_application_for_P3/app/src/main" target="_blank">Github Repository - Android code</a></li>
             </ul> 
             <div class="image-gallery">
             <div class="mibreit-imageElement" style="opacity:0">
                 <img src="/images/mibreitGallery/image-placeholder-transparent.png" 
-                    data-src="/images/projects/wildfireRush/menu.png" 
+                    data-src="/images/projects/pokerApp/suits.png" 
                     data-title="Image 1" 
                     alt="Image 1" />
-                <p>I worked with the Unity UI system to setup the menu layout so it adapted to various screen sizes. </p>
+                <p>During this course, we were encouraged to develop our own algorithms for analysing images. 
+                    This image shows an algorithm I developed which used the spread of the closest pixels to the center to determine the suit of the cards. </p>
             </div>
             <div class="mibreit-imageElement" style="opacity:0">
                 <img src="/images/mibreitGallery/image-placeholder-transparent.png" 
-                    data-src="/images/projects/wildfireRush/particleSystem.png" 
+                    data-src="/images/projects/pokerApp/blob_example.png" 
                     data-title="Image 2" 
                     alt="Image 2" />
-                <p>I used the Unity Particle System to create a fire extinguisher effect. </p>
+                <p>BLOB analysis was used to determine the number of the card. </p>
             </div>
             <div class="mibreit-imageElement" style="opacity:0">
                 <img src="/images/mibreitGallery/image-placeholder-transparent.png" 
-                    data-src="/images/projects/wildfireRush/cinemachine.png" 
+                    data-src="/images/projects/pokerApp/PokerUI.png" 
                     data-title="Image 3" 
                     alt="Image 3" />
-                <p>I used Cinemachine to capture all the shots you can see in the trailer of this game. </p>
+                <p>The UI showing what poker hand the user has.
+                    The player's personal cards are entered manually by the user each time he has a new hand. </p>
             </div>
             <script src="/initializeGallery.js"></script>
             </div>
