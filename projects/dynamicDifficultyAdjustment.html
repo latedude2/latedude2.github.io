@@ -1,0 +1,77 @@
+<head>
+    <title>Simonas Čeponis Bachelor Project</title>
+    <meta name="Simonas Čeponis portfolio">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/main.css">
+
+    <link rel="stylesheet" href="/mibreitGallery.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/mibreitGallery.min.js"></script>
+</head>
+<body>
+  <div w3-include-html="/navigation.html"></div> 
+  <div class="container">
+    <div class="main">
+      <div class="row">
+          <div class="column">
+            <h2>Multiplayer First-person Shooter Game Featuring Dynamic Difficulty Adjustment</h2>
+            <p>Bachelor project developed by me and 5 other students at Aalborg university.
+            For this project, I acted as the team lead and programmer. 
+            We developed a Unity game which features multiplayer implemented using Photon Unity Networking, first-person shooter gameplay and data collection.
+        </p>
+            <p><b>Technologies used: </b>Unity, C#, HTML, CSS, JS, NodeJS, MongoDB, Python Jupyter Notebooks, Pandas and various others.</p>
+            <b>Links: </b> 
+            <ul>
+                <li><a href= "https://youtu.be/zqJQNXSjj0w" target="_blank">Video Presentation</a></li>
+                <li><a href= "https://github.com/Group-609/BachelorProject" target="_blank">Github Repository - Unity code</a></li>
+                <li><a href= "https://github.com/Group-609/Group-609.github.io" target="_blank">Github Repository - Website for doing the Final testing</a></li>
+            </ul> 
+            <div class="image-gallery">
+            <div class="mibreit-imageElement" style="opacity:0">
+                <img src="/images/mibreitGallery/image-placeholder-transparent.png" 
+                    data-src="/images/projects/DynamicDifficultyAdjustment/lobby.png" 
+                    data-title="Image 1" 
+                    alt="Image 1" />
+                <p>Learning how to use the Photon Unity Networking was the biggest challenge for this project. 
+                    Putting multiple players into a single game was a very interesting and sometimes frustrating task. </p>
+            </div>
+            <div class="mibreit-imageElement" style="opacity:0">
+                <img src="/images/mibreitGallery/image-placeholder-transparent.png" 
+                    data-src="/images/projects/DynamicDifficultyAdjustment/shader-sphere.jpg" 
+                    data-title="Image 2" 
+                    alt="Image 2" />
+                <p>One of the goals we raised for this project was to enable testing which the participants could do with zero hand holding from us. 
+                    The dream was to have a single link that the participants would click and everything else would be automatic. We managed to make this dream a reality! </p>
+            </div>
+            <div class="mibreit-imageElement" style="opacity:0">
+                <img src="/images/mibreitGallery/image-placeholder-transparent.png" 
+                    data-src="/images/projects/DynamicDifficultyAdjustment/SequenceDiagram.png" 
+                    data-title="Image 3" 
+                    alt="Image 3" />
+                <p>This dream was made possible by creating a WebGL build of the game;
+                    doing a bunch of work to collect their data directly from the game;
+                     including surveys into the website and finally combining all of these things into a seamless user friendly experience. </p>
+            </div>
+            <div class="mibreit-imageElement" style="opacity:0">
+                <img src="/images/mibreitGallery/image-placeholder-transparent.png" 
+                    data-src="/images/projects/DynamicDifficultyAdjustment/DDA_diagram.jpg" 
+                    data-title="Image 4" 
+                    alt="Image 4" />
+                <p>I also helped to develop and test the DDA system which balanced the game difficulty between the players in realtime.</p>
+            </div>
+
+            <script src="/initializeGallery.js"></script>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="/includeHTML.js"></script>
+  <script>includeHTML();</script>
+</body>
