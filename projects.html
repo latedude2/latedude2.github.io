@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="mibreitGallery.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="/mibreitGallery.min.js"></script>
 </head>
 <body>
@@ -20,18 +21,14 @@
     <div class="main">
       <div class="row">
           <div class="column">
-            <h2>Projects I worked on</h2>
-            <ul>
-                <li><a href="/projects/dynamicDifficultyAdjustment.html">🎨 Ink Busters - Multiplayer FPS Game (2021)</a></li>
-                <li><a href="/projects/wildfireRush.html">🔥 Wildfire Rush - Action/Puzzle Game (2021)</a></li>
-                <li><a href="/projects/gameNavigationalAids.html">🐝 Game Navigational Aids Research - Adventure Game (2020)</a></li>
-                <li><a href="/projects/partyLeds.html">🥳 Party LEDs - Arduino project (2020)</a></li>
-                <li><a href="/projects/pokerApp.html">♠️ Poker assistance app - Image Processing project (2019)</a></li>
-                <li><a href="/projects/languageGame.html">🇩🇰 Language Learning and Narrative Research - Android story based game (2019)</a></li>
-                <li><a href="/projects/eggMission.html">🥚 EggMission - 2D Unity Arcade Driving game (2018)</a></li>
-                <li><a href="/projects/sorex.html">♟️ Sorex - C++ .NET Chess game (2016)</a></li>
-
-            </ul> 
+            <h2>Projects have I worked on</h2>
+            <div id="app">
+              <ul>
+                <li v-for="project in projects">
+                  <a :href="project.link">{{ project.title }}</a>
+                </li>
+              </ul>
+            </div>
           </div>
       </div>
     </div>
