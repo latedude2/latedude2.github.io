@@ -2,6 +2,7 @@ var app = new Vue({
     el: '#app',
     data: {
         projects: [
+          { title: '💃 The Circle of Dance - Rhythm game made for the GMTK Game jam 2021', link: 'projects/theCircleOfDance.html'},
           { title: '🎨 Ink Busters - Multiplayer FPS Game (2021)' , link: '/projects/dynamicDifficultyAdjustment.html' },
           { title: '🔥 Wildfire Rush - Action/Puzzle Game (2021)', link: '/projects/wildfireRush.html' },
           { title: '🐝 Game Navigational Aids Research - Adventure Game (2020)', link: '/projects/gameNavigationalAids.html' },
