@@ -22,9 +22,15 @@
       <div class="row">
           <div class="column">
             <h2>Projects have I worked on</h2>
+            <div style="width: 50%;" id="tag-list" >
+                <div style="margin-right: 7px; display: inline-block;" v-for="tag in tags">
+                  <input type="checkbox" :value="tag.name" id="tag.name" v-model="checkedTags" @change="check($event)"> {{tag.name}}
+                </div>
+            </div>
+            
             <div id="app">
               <ul>
-                <li v-for="project in projects">
+                <li v-for="project in filteredProjects">
                   <a :href="project.link">{{ project.title }}</a>
                 </li>
               </ul>
