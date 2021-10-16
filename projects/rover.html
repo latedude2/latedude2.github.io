@@ -1,0 +1,63 @@
+<head>
+    <title>Simonas Čeponis Rover</title>
+    <meta name="Simonas Čeponis portfolio">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/main.css">
+
+    <link rel="stylesheet" href="/mibreitGallery.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/mibreitGallery.min.js"></script>
+</head>
+<body>
+  <div w3-include-html="/navigation.html"></div> 
+  <div class="container">
+    <div class="main">
+      <div class="row">
+          <div class="column">
+            <h2>Space exploration/survival game made during Game Jam round 2 by Backtrace</h2>
+            <p>Developed in 48 hours together with 4 of my friends. 
+            For this project, I acted as lead programmer. 
+        </p>
+            <p><b>Technologies used: </b>Unity, C#, Backtrace.</p>
+            <b>Links: </b> 
+            <ul>
+                <li><a href= "https://dovii.itch.io/rover" target="_blank">Play the game on itch.io</a></li>
+                <li><a href= "https://github.com/latedude2/StorytellingGameJam" target="_blank">Github Repository</a></li>
+                <li><a href= "https://www.youtube.com/watch?v=9ji08UwTXJA" target="_blank">Gameplay video</a></li>
+            </ul> 
+            <div class="image-gallery">
+            <div class="mibreit-imageElement" style="opacity:0">
+                <img src="/images/mibreitGallery/image-placeholder-transparent.png" 
+                    data-src="/images/projects/rover/Gameplay.gif" 
+                    data-title="Image 1" 
+                    alt="Image 1" />
+                <p>The theme of the Game Jam was "Sharing knowledge". 
+                    As a captain on a mission to find a habitable planet, you send off a rover to planet Idrade. 
+                    You control it from your space shuttle orbiting around the planet. 
+                    Your aim is to find a source of water with the assistance of the rover. 
+                    You must send commands for the rover to scan the area for water and direct it to a potential water source. </p>
+            </div>
+            <div class="mibreit-imageElement" style="opacity:0">
+                <img src="/images/mibreitGallery/image-placeholder-transparent.png" 
+                    data-src="/images/projects/rover/CLI.gif" 
+                    data-title="Image 2" 
+                    alt="Image 2" />
+                <p>I worked on implementing the command line interface and game logic for the enemies and combat. 
+                    As the game focuses on slow transmission of information, I implemented delays in the command sending and receiving. 
+                    Also, the information of enemy positions are updated with delay. </p>
+            </div>
+            <script src="/initializeGallery.js"></script>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="/includeHTML.js"></script>
+  <script>includeHTML();</script>
+</body>

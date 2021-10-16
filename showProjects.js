@@ -31,6 +31,11 @@ var app = new Vue({
     el: '#app',
     data: {
         projects: [
+          { title: '🤖 Rover - Survival/exploration game made for Game Jam round 2 by Backtrace (2021)', 
+            link: 'projects/rover.html',
+            technologies: ['C#', 'Unity'],
+            projectType:'Group'
+          },
           { title: '🏴‍☠️ Sail! - Resource management game made for Inclusivity Game jam 2021 (1st place!)', 
             link: 'projects/sail.html',
             technologies: ['C#', 'Unity'],
