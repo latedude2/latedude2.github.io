@@ -31,6 +31,11 @@ var app = new Vue({
     el: '#app',
     data: {
         projects: [
+          { title: '💡 Temple of Boonil - First person puzzle game (2021-Present)', 
+            link: 'projects/templeOfBoonil.html',
+            technologies: ['C#', 'Unity'],
+            projectType:'Group'
+          },
           { title: '🤖 Rover - Survival/exploration game made for Game Jam round 2 by Backtrace (2021)', 
             link: 'projects/rover.html',
             technologies: ['C#', 'Unity'],
