@@ -31,7 +31,7 @@ var app = new Vue({
     el: '#app',
     data: {
         projects: [
-          { title: '💡 Temple of Boonil - First person puzzle game (2021-Present)', 
+          { title: '💡 Temple of Starlight - First person puzzle game (2021-Present)', 
             link: 'projects/templeOfBoonil.html',
             technologies: ['C#', 'Unity'],
             projectType:'Group'
