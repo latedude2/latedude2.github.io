@@ -31,7 +31,12 @@ var app = new Vue({
     el: '#app',
     data: {
         projects: [
-          { title: '💡 Temple of Starlight - First person puzzle game (2021-Present)', 
+          { title: '🍕 Bloody Bitty Caesars - Creepy driving game (2023)', 
+            link: 'projects/pizzaGame.html',
+            technologies: ['C#', 'Unity'],
+            projectType:'Group'
+          },
+          { title: '💡 Temple of Starlight - First person puzzle game (2021-2023)', 
             link: 'projects/templeOfBoonil.html',
             technologies: ['C#', 'Unity'],
             projectType:'Group'

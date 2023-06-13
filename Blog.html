@@ -1,5 +1,5 @@
 <head>
-    <title>Simonas Čeponis Projects</title>
+    <title>Simonas Čeponis Blog</title>
     <meta name="Simonas Čeponis portfolio">
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
@@ -21,7 +21,7 @@
     <div class="main">
       <div class="row">
           <div class="column">
-            <h2>Projects</h2>
+            <h2>Blog</h2>
             <div style="width: 50%;" id="tag-list" >
                 <div style="margin-right: 7px; display: inline-block;" v-for="tag in tags">
                   <input type="checkbox" :value="tag.name" id="tag.name" v-model="checkedTags" @change="check($event)"> {{tag.name}}
@@ -39,7 +39,7 @@
       </div>
     </div>
   </div>
-  <script src="/showProjects.js"></script>
+  <script src="/showBlogs.js"></script>
   <script src="/includeHTML.js"></script>
   <script>includeHTML();</script>
 </body>

@@ -1,0 +1,56 @@
+<head>
+    <title>Simonas Čeponis Bloody Bitty Caesars game</title>
+    <meta name="Simonas Čeponis portfolio">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/main.css">
+
+    <link rel="stylesheet" href="/mibreitGallery.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/mibreitGallery.min.js"></script>
+</head>
+<body>
+  <div w3-include-html="/navigation.html"></div> 
+  <div class="container">
+    <div class="main">
+      <div class="row">
+          <div class="column">
+            <h2>Bloody Bitty Caesars</h2>
+              <p>Nordic Game Jam 2023 submission. 
+                  Together with 4 of my friends, we created a creepy driving game where the player has to drive around town delivering pizzas. </p>
+              <p><b>Technologies used: </b>Unity, C#, GameCI.</p>
+              <b>Links: </b> 
+            <ul>
+                <li><a href= "https://latedude2.itch.io/pizza-city" target="_blank">Check the game out on Itch.</a></li>
+                <li><a href= "https://github.com/latedude2/nordic-game-jam-2023" target="_blank">Github Repository</a></li>
+            </ul> 
+
+              <div class="image-gallery">
+                <div class="mibreit-imageElement" style="opacity:0">
+                  <img src="/images/mibreitGallery/image-placeholder-transparent.png" 
+                        data-src="/images/projects/pizzaGame/pizza.png" 
+                        data-title="Image 1" 
+                        alt="Image 1" />
+                  <p>Drive for your life as you deliver pizzas to quirky and pizza-desperate customers. Do you think you can deliver all the pizzas? </p>
+                </div>
+                <div class="mibreit-imageElement" style="opacity:0">
+                  <img src="/images/mibreitGallery/image-placeholder-transparent.png" 
+                        data-src="/images/projects/pizzaGame/ambience.png" 
+                        data-title="Image 2" 
+                        alt="Image 2" />
+                  <p>I implemented the driving physics, the camera controller, random generation of goals, the navigational aid and the post-processing in URP. </p>
+                </div>
+                <script src="/initializeGallery.js"></script>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="/includeHTML.js"></script>
+  <script>includeHTML();</script>
+</body>

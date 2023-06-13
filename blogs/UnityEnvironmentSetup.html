@@ -1,0 +1,83 @@
+<head>
+    <title>Simonas Čeponis Bachelor Project</title>
+    <meta name="Simonas Čeponis portfolio">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/main.css">
+
+    <link rel="stylesheet" href="/mibreitGallery.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/mibreitGallery.min.js"></script>
+</head>
+<body>
+  <div w3-include-html="/navigation.html"></div> 
+  <div class="container">
+    <div class="main">
+      <div class="row">
+          <div class="column">
+            <h2>Unity Development Environment Setup Guide</h2>
+            <p> Issues with git credentials? Scene merging? Intellisense? Setting up the Unity Debugger? 
+                This guide should help you with all of that. It will not teach you how to use these tools, but rather how to set them up. 
+                I've spent days trying to figure out how to set up my environment properly, so hopefully this guide will save you some time.
+            </p>
+            <p><b>  Note that this was written while setting up a fresh PC for development. Some necessary steps might be missing or you might have already done some of the steps. 
+                Use this guide as a way of checking what you might have missed. Some things might also have changed since the writing of this guide (April of 2023).</b>
+            </p>
+
+            <ol>
+                <li>Install git: <a href= "https://git-scm.com/downloads" target="_blank">https://git-scm.com/downloads</a></li>
+                <li>Install sourcetree: <a href= https://www.sourcetreeapp.com/ target="_blank">https://www.sourcetreeapp.com/</a> When installing, you will need to connect a bitbucket account. 
+                    Create one if you don't have it. Afterwards, also connect your github account to Sourcetree.</li>
+                <li>Install git credential manager (you might need to find newest release if link is outdated): <a href= https://github.com/git-ecosystem/git-credential-manager/releases/tag/v2.0.935 target="_blank">https://github.com/git-ecosystem/git-credential-manager/releases/tag/v2.0.935</a></li>
+                <li>Follow this guide to fix issue with GitCredentialHelper showing up over and over:
+                    <a href= https://community.atlassian.com/t5/Sourcetree-questions/I-always-get-a-popup-credential-helper-selector-asking-me-to/qaq-p/1465880 target="_blank">https://community.atlassian.com/t5/Sourcetree-questions/I-always-get-a-popup-credential-helper-selector-asking-me-to/qaq-p/1465880</a></li>
+                <li>Install Unity hub</li>
+                <li>Install Unity version according to the project you are working on. A good way to do this is to try to open a cloned Unity project. Unity hub should then prompt you to install the correct Unity version for that project. </li>
+                <li>When installing, you will also install Visual Studio Community (even if not writing code, we need it to make Unity work AFAIK). When doing so, make sure to select Game Development with Unity when prompted. <img src="/images/blogs/UnityEnvironmentSetup/CommunityPrompt.png"> </li>
+                <li>No need to sign in when prompted here: <img src="/images/blogs/UnityEnvironmentSetup/CommunityPrompt2.png"> </li>
+                <li>Setup unity smart merge to merge prefab and scene files automatically (it only takes 5 minutes!): <a href= https://docs.unity3d.com/Manual/SmartMerge.html target="_blank">https://docs.unity3d.com/Manual/SmartMerge.html</a></li>
+                <li>Install VS Code (if you dont write any code at all you can skip VS code setup). This is a nice video which takes you through the next few steps: <a href= "https://www.youtube.com/watch?v=ihVAKiJdd40" target="_blank">https://www.youtube.com/watch?v=ihVAKiJdd40</a></li>
+                    I also found this video for MAC (not tested at all though): <a href="https://www.youtube.com/watch?v=3GVGyooZ8jk" target="_blank">https://www.youtube.com/watch?v=3GVGyooZ8jk</a>
+                <li> At some point VS Code prompts to install <b>Microsoft .Net SDK 7.0</b>. Make sure it is installed if it didn't install automatically. </li>
+                <li>VSCode extensions to install: 
+                    <ol>
+                        <li>C#</li>
+                        <li>Unity Tools</li>
+                        <li>Debugger for Unity (Included in Unity Tools, it will be shown as deprecated, but it still works). This extension helps with setting up the debugger for Unity.</li>
+                        <li>Git Lens - Git supercharged</li>
+                    </ol>
+                </li>
+                <li>I also recommend these extensions:
+                    <ol>
+                        <li>Github Copilot (it's free for students!)</li>
+                        <li>Bookmarks</li>
+                        <li>Code Spell Checker</li>
+                        <li>HLSL Tools (for writing shaders)</li>
+                    </ol>
+                </li>
+                <li>Open your Unity project</li>
+                <li>Go to Edit > Preferences and search for "editor". Set default editor to VS Code. <img src="/images/blogs/UnityEnvironmentSetup/editorSetup.png"></li>
+                <li><b>Setting up Debugging.</b> Normally, installing the Debugger for Unity extension should be enough.
+                    Switch to the debug tab on the left, and press create a launch.json file. 
+                    The dropdown menu that appears should contain the Unity Debugger. Sometimes it doesn't, in which case you need to give it some time :D 
+                    Try restarting VS Code and give it sometime to run in the background. For me, the button just appeared after doing so. 
+                    If it doesn't appear after 10-ish minutes, start searching for other solutions. This might help: <a href="https://answers.unity.com/questions/1815046/how-to-attach-unity-debugger-in-vs-code.html" target="_blank">https://answers.unity.com/questions/1815046/how-to-attach-unity-debugger-in-vs-code.html</a>
+                    <img src="/images/blogs/UnityEnvironmentSetup/debugger.png"> 
+                    Pressing the button should create the file, and you should now be able to use debugging for your project. 
+                </li>
+
+
+            </ol> 
+            
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="/includeHTML.js"></script>
+  <script>includeHTML();</script>
+</body>
